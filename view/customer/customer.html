@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer view</title>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+    <div class="contian-nav">  
+        <nav>
+            <div class="logo">
+                <img src="../../img/logo.jpg" width="80">
+            </div>
+            <div class="nav-center">
+                <ul>
+                    <li >
+                        <ion-icon name="home-outline"></ion-icon>
+                        <a href="../../home.html">HOME</a>
+                    </li>
+                    <li>
+                        <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>
+                        <a href="customer.html">CUSTOMER</a>
+                    </li>
+                    <li>
+                        <ion-icon name="folder-outline"></ion-icon>
+                        <a href="../seller/seller.html">SELLER</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="../customer/buy/buy.html"><ion-icon name="cart"></ion-icon></a>
+                <!-- <ion-icon name="log-out-outline"></ion-icon> -->
+            </div>
+        </nav>
+        <form id="search">
+            <input type="text"id="search-item" placeholder="search book here..."  >
+            <ion-icon name="search-outline" ></ion-icon>
+        </form>
+    </div>
+   
+    <div class="product-main">
+        <div class="title">
+            <strong>BOOK PRODUCT </strong>
+            
+        </div>
+
+        <div id="buy-dialog" style="display: none">
+            <dialog open >
+                <h1>Datail book</h1>
+                <div class="card-contain">
+                    <img id="file_upload">
+                    <div class="main-title">
+                        <div class="titlebook">
+                            <span>Title:</span>
+                            <p id="name_book"></p>
+                        </div>
+                        <div class="price">
+                            <span>Price:</span>
+                            <div class="price_title">
+                                <p id="price_book"></p>
+                                <p id="pay_book"></p>
+                            </div>
+                        </div>
+                        <div id="typeOfBook">
+                            <span>Type:</span>
+                            <p id="type_book"></p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="star-icon">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                    </div> 
+                </div>
+                <div class="praragraph_detail">
+                    <ion-icon name="megaphone"></ion-icon>
+                    <p>Reading strengthens your brain · Increases your ability to empathize · Builds your vocabulary · Helps prevent age-related cognitive decline · Reduces stress</p>
+                </div>
+                <br>
+                <menu class="btn">
+                    <button id="createcancelButton" onclick="btn_cancel()">Cancel</button>
+                    <a href="../customer/buy/buy.html">Add cart +</a>
+                </menu>
+            </dialog>
+        </div>
+
+        <div class="main-card" id="main-card">
+            
+        </div>
+        
+            
+        
+        <div class="service-main" >
+            <div class="title">
+                <strong>SERVICE </strong>
+            </div>
+            <div class="main-card">
+    
+                <div  id="card-main">
+                    <img src="../../img/delivery.png" width="250">
+                    <div class="card-title">
+                        <span>Delivery</span>
+                    </div>
+                    <p>Free delivery if you order alot of book and you are the top customer in my shop
+                        if you are not top we have free delivery also you just order book from 10 to 20 we will free for you.
+                    </p>
+                </div>
+                <div id="card-main">
+                    <img src="../../img/order.jpg" width="250">
+                    <div class="card-title">
+                        <span>Convenient order</span>
+                    </div>
+                    <p>In my shop when you order already we keep book in delivery and you just put location after go to your house , you just wait a bit and then 
+                        we will arrive your house faster.
+                    </p>
+                </div>
+                <div  id="card-main">
+                    <img src="../../img/new.png" width="250">
+                    <div class="card-title">
+                        <span>New book</span>
+                    </div>
+                    <p>In our shop we import new book from foreigner and our book supporter from other 
+                        countries as Frace Japenese China in our shop keep only new book and goot quality for customer. 
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+       
+        
+
+<!-- ----------------------------footer----------------------------------- -->
+
+
+
+    <footer class="contain-footer">
+        <div class="footer-left">
+            <div class="logo">
+                <img src="../../img/logo.jpg" width="100">
+            </div>
+            <div class="text">
+                <p>The purpose of our shop we want customer:
+                    Reading to exercises the Brain
+                    Reading to improves concentration and the ability to Focus
+                    Reading to improves literacy
+                    Reading improves sleep
+                    Reading increases general knowledge
+                    Reading to motivational
+                    Reading reduces stress.
+                    
+                </p>
+            </div>
+        </div>
+        <div class="footer-center">
+            <span>OPENING</span>
+            <p>Open 24hour per day <br><br>
+            MON-WEN : 7:30am - 8pm <br><br>
+            THU-FRI : 12pm - 9px <br><br>
+            SAT-SUN : close shop</p>
+        </div>
+        <div class="footer-right">
+            <span>CONTACT</span>
+            <div class="icon">
+                <ion-icon name="location-sharp"></ion-icon>
+                <p>Location : <a href=""></a>BP511 St. 371 Phum Tropeang
+                    Chhuk (Borey Sorla),<br> Sangkat Tek Thla,
+                    Khan Sen Sok, Phnom Penh, CAMBODIA</p>
+            </div>
+            <div class="icon">
+                <ion-icon name="call-sharp"></ion-icon>
+                <p>Call : 088 841 65 27</p>
+            </div>
+            <div class="icon">
+                <ion-icon name="mail-sharp"></ion-icon>
+                <p>Email : PKbook</p>
+            </div>
+            <div class="img-footer">
+                <img src="../../img/fb.png" alt="">
+                <img src="../../img/IG.png" alt="">
+                <img src="../../img/youtube.png" alt="">
+                <img src="../../img/twiter.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/customer.js"></script>
+</body>
+</html>

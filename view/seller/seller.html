@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller view</title>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+    <div class="cotain-main-sell">
+        <nav>
+            <div class="logo">
+                <img src="../../img/logo.jpg" width="80">
+            </div>
+            <div class="nav-center">
+                <ul>
+                    <li >
+                        <ion-icon name="home-outline"></ion-icon>
+                        <a href="../../home.html">HOME</a>
+                    </li>
+                    <li>
+                        <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>
+                        <a href="../customer/customer.html">CUSTOMER</a>
+                    </li>
+                    <li>
+                        <ion-icon name="folder-outline"></ion-icon>
+                        <a href="seller.html">SELLER</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="../customer/buy/buy.html"><ion-icon name="cart"></ion-icon></a>
+                <!-- <ion-icon name="log-out-outline"></ion-icon> -->
+            </div>
+        </nav>
+        <form id="search">
+            <input type="text"id="search-item" placeholder="search book here..."  >
+            <ion-icon name="search-outline" ></ion-icon>
+        </form>
+    </div>
+    <div class="contain-listbook">
+        <div id="book-dialog" style="display: none">
+            <dialog open >
+                <h1>Create and edit book here</h1>
+                <p>Name of book <br> <input type="text" id="name_book"></p> 
+                <p>Price of book <br> <input type="number" id="price_book"></p>
+
+                <select id="pay_book">
+                    <option value="$">$</option>
+                    <option value="៛">៛</option>
+                    <option value="typemoney" selected>Currency</option>
+                </select>
+                <select id="type_book">
+                    <option value="novel">Noval</option>
+                    <option value="education">Education</option>
+                    <option value="joke" >Joke</option>
+                    <option value="newknowlagde">Knowladge</option>
+                    <option value="happy" selected>Happy</option>
+                </select>
+            
+                <p>Book image <br><input type="text" id="file_upload"></p> 
+                
+                
+                <menu>
+                    <button id="createcancelButton" onclick="btn_cancel()">Cancel</button>
+                    <button id="createEditButton" onclick="create_book()"  >Create book</button>
+                </menu>
+        
+                
+                <div class="img-footer">
+                    <img src="../../img/fb.png" width="45">
+                    <img src="../../img/IG.png" width="40">
+                    <img src="../../img/youtube.png" width="55">
+                    <img src="../../img/twiter.png" width="40">
+                </div>
+        </dialog>
+        </div>
+        <div id="contian_all">
+            <button onclick="addBook()">Add book+</button>
+            <div id="card-container"> 
+                
+            </div>
+        </div>
+             
+    </div>
+    <footer class="contain-footer">
+        <div class="footer-left">
+            <div class="logo">
+                <img src="../../img/logo.jpg" width="100">
+            </div>
+            <div class="text">
+                <p>The purpose of our shop we want customer:
+                    Reading to exercises the Brain
+                    Reading to improves concentration and the ability to Focus
+                    Reading to improves literacy
+                    Reading improves sleep
+                    Reading increases general knowledge
+                    Reading to motivational
+                    Reading reduces stress.
+                    
+                </p>
+            </div>
+        </div>
+        <div class="footer-center">
+            <span>OPENING</span>
+            <p>Open 24hour per day <br><br>
+            MON-WEN : 7:30am - 8pm <br><br>
+            THU-FRI : 12pm - 9px <br><br>
+            SAT-SUN : close shop</p>
+        </div>
+        <div class="footer-right">
+            <span>CONTACT</span>
+            <div class="icon">
+                <ion-icon name="location-sharp"></ion-icon>
+                <p>Location : <a href=""></a>BP511 St. 371 Phum Tropeang
+                    Chhuk (Borey Sorla),<br> Sangkat Tek Thla,
+                    Khan Sen Sok, Phnom Penh, CAMBODIA</p>
+            </div>
+            <div class="icon">
+                <ion-icon name="call-sharp"></ion-icon>
+                <p>Call : 088 841 65 27</p>
+            </div>
+            <div class="icon">
+                <ion-icon name="mail-sharp"></ion-icon>
+                <p>Email : PKbook</p>
+            </div>
+            <div class="img-footer">
+                <img src="../../img/fb.png" alt="">
+                <img src="../../img/IG.png" alt="">
+                <img src="../../img/youtube.png" width="100">
+                <img src="../../img/twiter.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/seller.js"></script>
+</body>
+</html>

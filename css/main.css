@@ -1,0 +1,573 @@
+:root {
+    --main-color: #204c86dd;
+    --main-card-color: rgb(42, 102, 135);
+    --main-padding: 10px;
+    --main-magin: 20px;
+    --main-button-color: rgb(19, 162, 201);
+    --main-hover-color: rgba(247, 197, 15, 0.901);
+    --main-boder-radius: 10px;
+    --box-shadow: box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    background-color: rgb(213, 194, 167);
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(11, 11, 10); 
+    font-family: 'Roboto', sans-serif;
+
+}
+.container{
+    height: 100vh;
+    
+}
+.logo img{
+    border-radius: 50%;
+    border: 5px solid var(--main-card-color);
+}
+nav{
+    background-color: rgba(101, 101, 101, 0.685);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--main-padding);
+   
+}
+.nav-center ul{
+    
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.nav-center ul li{
+    margin: var(--main-magin);
+    display: flex;
+    align-items: center;
+
+}
+nav ul li:hover{
+    border-bottom: 3px solid var( --main-hover-color);
+    border-radius: 10px;
+    transition: 0.7s;
+    
+    
+}
+.nav-right ion-icon{
+    background-color: var(--main-button-color);
+    padding: var(--main-padding);
+    border-radius: var(--main-boder-radius);
+}
+nav ul li ion-icon ,.nav-right ion-icon ,.icon ion-icon {
+    font-size: 30px;
+    margin: 5px;
+    color: white;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+.nav-center ul li a:hover,.nav-center ul li ion-icon:hover,.nav-right ion-icon:hover{
+    color: var( --main-hover-color);
+}
+
+/* -----------title ----------------- */
+.body-contain{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+}
+.body-contain span ,.book1 h1{
+    color: black;
+}
+.body-contain .main-left p{
+    font-size: 18px;
+    margin-top: 40px;
+}
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+#overflowTest{
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+    width: 99%;
+    height: 45vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+.main-type h1{
+    margin: 20px;
+}
+
+#overflowTest img{
+    width: 150px;
+    height: 40vh;
+    margin: var(--main-magin);
+}
+
+.title{
+    background-color: var(--main-color);
+    text-align: center;
+    margin-top: var(--main-magin);
+    padding: var(--main-padding);
+}
+strong{
+    font-size: 30px;
+    color: rgb(245, 245, 245);
+   
+}
+
+/* --------------card-homepage---------------- */
+
+.customer-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--main-card-color);
+    padding: 40px;
+    border-radius: 10px;
+}
+.customer-card img{
+    background-color: #fff;
+    border-radius: var(--main-boder-radius);
+    width: 150px;
+    margin: var(--main-magin);
+}
+.card-contian{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: var(--main-magin);
+}
+
+
+.card-contain:hover ,#card-main:hover{
+    cursor: pointer;
+    background-color: rgba(77, 78, 79, 0.644);
+    transform: scale(1.05);
+    transition: 0.1s;
+    background: hsl(249,32% 17%);
+ 
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn button{
+    padding: var(--main-padding);
+    background-color: var(--main-button-color);
+    border: none;
+    border-radius: var(--main-boder-radius);
+    box-shadow: var(--box-shadow);
+}
+.btn button a{
+    text-decoration: none;
+}
+.btn button:hover{
+    cursor: pointer;
+    background-color: var(--main-button-color);
+    transform: scale(1.05);
+    transition: 0.1s;
+    
+}
+
+
+
+/* -----------------customer view---------------- */
+.contian-nav{
+    height: 70vh;
+    background-image: url(http://wallpapers.net/web/wallpapers/man-reading-a-book-hd-wallpaper/thumbnail/lg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#search{
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 150px;
+    margin-left: 450px;
+}
+#search input{
+    border-radius: 20px  0px 0px 20px;
+    padding: var(--main-padding);
+    width: 50%;
+    outline: none;
+    border: none;
+    color: black;
+}
+#search  ion-icon {
+    background-color: #fff;
+    color: black;
+    padding: 9.5px;
+    border-radius: 0px  20px 20px 0px;
+    
+}
+
+
+/* --------customer buy book----------------- */
+.order-contain{
+    background: rgba(83, 81, 81, 0.504);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: var(--main-magin);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.order-contain img {
+    width: 100px;
+    height: 19vh;
+}
+.dicribe{
+    display: flex;
+    justify-content: center;
+    margin-left: -15%;
+    background-color: rgba(147, 133, 133, 0.203);
+}
+.dicribe span{
+    color: black;
+    margin: 2%  0 2% 18%;
+   
+}
+.buy_product strong{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    color: black;
+}
+.order-contain input{
+    width: 20px;
+    padding: 5px;
+    margin-left: 15px;
+}
+.order-contain .delete-cart{
+    width: 50px;
+    height: 10vh;
+}
+
+.order-contain .price {
+    display: flex;
+    flex-direction: row;
+}
+.order-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.card-contain .btn a ,.btn a{
+    text-decoration: none;
+    background-color: var(--main-button-color);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.total_prices{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.total_price{
+    border-bottom: 3px solid #000000;
+}
+
+
+/* =====================dialog ======================== */
+.product-main dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 5px;
+    border: 2px solid #413c3c;
+    z-index: 1;
+    background-color: rgb(103, 101, 99);
+   
+}
+dialog .card-contain{
+    color: wheat;
+   width: 85%;
+   height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(4, 78, 48, 0);
+}
+dialog .card-contain img{
+    margin-left: -1px;
+    
+}
+.main-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-title span{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    
+}
+.main-title p{
+    font-size: 20px;
+}
+.titlebook{
+    background-color: rgba(255, 255, 255, 0);
+}
+.price_title{
+    display: flex;
+}
+
+dialog .star-icon{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main-title p ,h1,.cerrency p,.praragraph_detail p ,.praragraph_detail ion-icon{
+    color: white;
+}
+.praragraph_detail{
+    display: flex;
+    align-items: flex-start;
+}
+.praragraph_detail ion-icon{
+    font-size: 30px;
+}
+.praragraph_detail p {
+    font-size: 17px;
+}
+.cerrency{
+    display: flex;
+}
+.btn button{
+    display: flex;
+    margin: 5px;
+}
+
+/* --------------------sevice point-------------------------- */
+
+
+
+.main-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: var(--main-magin);
+    flex-wrap: wrap;
+}
+.card-contain ,#card-main {
+    background-color: var(--main-card-color);
+    width: 250px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: var(--main-magin);
+    
+    
+}
+.card-contain img ,#card-main img {
+    background-color: rgba(255, 247, 202, 0.808);
+    border-radius: 10px;
+    margin: var(--main-magin);
+    width: 200px;
+    margin-left: 25px;
+
+}
+
+span{
+    font-size: 20px;
+    font-weight: bold;
+    color: wheat;
+    margin: 5px;
+}
+p{
+    font-size: 15px;
+    
+}
+/* -------------product point------------------------ */
+.product-main{
+    height: 100vh;
+}
+.card-title{
+    display: flex;
+    flex-direction: column;
+}
+.card-contain img{
+    height: 25vh;
+    width: 150px;
+    margin-left: 19%;
+}
+.star-icon ion-icon{
+    color: var(--main-hover-color);
+}
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#book{
+    margin-left: 45px;
+}
+.contain-footer{
+    height: 40vh;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-around;
+    padding: var(--main-padding);
+}
+.footer-left{
+    width: 450px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+footer p {
+    font-size: 17px;
+    color: rgb(209, 209, 209);
+}
+.footer-center p{
+    margin: var(--main-magin);
+}
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.img-footer img{
+    width: 50px;
+   background-color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+
+
+
+/* --------------------------seller page -------------------------------- */
+
+.cotain-main-sell{
+    background-image: url(https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3BlbiUyMGJvb2t8ZW58MHx8MHx8&w=1000&q=80);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contain-listbook {
+  display: flex;
+  justify-content: center;
+}
+.contain-listbook  button{
+    background-color: var(--main-button-color);
+    padding: 10px 60px 10px 60px;
+    border: none;
+    margin: var(--main-magin);
+    border-radius: 5px;
+    
+}
+
+dialog{
+    margin-top: 20px;
+    margin-left: 15%;
+    height: 90vh;
+    width: 70%;
+    padding: 20px;
+    background-color: var(--main-card-color);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1;
+}
+dialog p {
+    font-size: 30px;
+    text-align: center;
+}
+ dialog select {
+    margin: 10px;
+    width: 52%;
+    padding: var(--main-padding);
+    border-radius: var(--main-boder-radius);
+} 
+dialog input {
+    width: 50%;
+    padding: var(--main-padding);
+    border-radius: var(--main-boder-radius);
+    outline: none;
+    border: none;
+    color: black;
+}
+
+menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+ menu button{
+    margin: var(--main-magin);
+    margin-left: 150px;
+    background-color: var(--main-button-color);  
+}
+
+
+/* =================display=============== */
+#contian_all , #card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-display{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    margin: var(--main-magin);
+    border-radius: 10px;
+    padding: var(--main-padding);
+    
+}
+
+.book_describe {
+    text-align: center;
+}
+
+
+.edit_delete{
+    display: flex;
+    justify-content: space-between;
+
+}
+.edit_delete img{
+    width: 40px;
+    background: rgb(234, 224, 224);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+
+
+
